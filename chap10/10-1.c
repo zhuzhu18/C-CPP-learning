@@ -13,3 +13,13 @@ int main(void)
     
     return 0;
 }
+
+
+/* 输出如下：
+s = 0x4006e4
+s1 = 0x4006e4
+s2 = 0x7ffdf4615e70
+here s2[0] = B
+
+运行 FINISHED; 退出值0; 实时:  0ms; 用户:  0ms; 系统:  0ms
+*/
