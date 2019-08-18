@@ -1,2 +1,1 @@
-# C_learning
-C语言学习
+# C & C++ learning
