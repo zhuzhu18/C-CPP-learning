@@ -10,5 +10,5 @@ int main() {
 	{
 		Employee e3{ "Alice", Gender::female, {1989, 2, 14} };
 		std::cout << e3.toString() << std::endl;
-	}
+	}     // 内嵌作用域，跳出后e3被自动销毁，调用析构函数
 }
