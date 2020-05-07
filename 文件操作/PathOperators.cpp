@@ -8,7 +8,7 @@ int main() {
 	fs::path p1{ R"(c:\temp)" };
 	fs::path p2{ R"(c:\temp)" };
 	fs::path p3{ "" };
-	fs::path p4{ "c\\" };
+	fs::path p4{ "c:\\" };
 
 	p1.append("users");
 	p1 /= "zhuzhu";
