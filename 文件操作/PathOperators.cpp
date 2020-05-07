@@ -8,6 +8,7 @@ int main() {
 	fs::path p1{ R"(c:\temp)" };
 	fs::path p2{ R"(c:\temp)" };
 	fs::path p3{ "" };
+	fs::path p4{ "c\\" };
 
 	p1.append("users");
 	p1 /= "zhuzhu";
@@ -16,4 +17,7 @@ int main() {
 	p2.concat(R"(users)");
 	p2 += "zhuzhu";
 	cout << p2 << endl;
+
+	cout << "磁盘总空间：" << fs::space(p4).capacity << endl;
+	cout << "磁盘可用空间：" << fs::space(p4).free << endl;
 }
