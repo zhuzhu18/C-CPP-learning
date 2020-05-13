@@ -23,6 +23,15 @@ Vec2D& Vec2D::operator+=(const Vec2D& v) {
 	return *this;
 }
 
+double& Vec2D::operator[](const int& index) {
+	if (index == 0)
+		return x;
+	else if (index == 1)
+		return y;
+	else
+		throw std::out_of_range("数组越界异常");
+}
+
 std::string Vec2D::toString() {
 	return std::string("Vec: ("  + std::to_string(x) + ", "+std::to_string(y)+")");
 }
