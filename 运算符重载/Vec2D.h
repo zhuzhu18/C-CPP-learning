@@ -12,8 +12,9 @@ public:
 	Vec2D operator+ (const Vec2D&);
 	Vec2D operator+(const double);
 	Vec2D& operator+=(const Vec2D& v);
-	friend Vec2D operator+(const double, Vec2D&);             // 瀹氫箟涓�涓诞鐐规暟 + 鍚戦噺鏃堕渶瀹氫箟涓�涓弸鍏冨嚱鏁帮紝
-																						 // 鍥犱负娴偣鏁版槸鍐呯疆绫诲瀷锛屼笉鑳介噸杞借繍绠楃
+	friend Vec2D operator+(const double, Vec2D&);             // 定义一个浮点数 + 向量时需定义一个友元函数，
+																						 // 因为浮点数是内置类型，不能重载运算符
+	double& operator[](const int& index);               // 若要修改下标访问的元素值，则返回值需为引用类型，因为返回值必须是可修改的左值
 	std::string toString();
 };
 
