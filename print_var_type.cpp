@@ -36,7 +36,7 @@ int main(int argc, char** argv){
     auto i = {1, 2, 3, 4, 5};
     cout<<type_to_string<decltype(i)>()<<endl;      // std::initializer_list<int>
     auto j = [=](int i){};
-    cout<<type_to_string<decltype(j)>()<<endl;
+    cout<<type_to_string<decltype(j)>()<<endl;      // (lambda at /Users/zhihua19/pycharm_projects/opencv/demo/1.cpp:38:14)
 
     return 0;
 }
