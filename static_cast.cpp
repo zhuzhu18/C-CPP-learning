@@ -26,5 +26,6 @@ void test_const_cast(){
 }
 int main(){
     test_const_cast();
+    cout<<&("zhuzhu")<<endl;       // C风格字符串字面量是左值, 可以取地址
     return 0;
 }
